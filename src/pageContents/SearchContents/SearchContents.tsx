@@ -53,7 +53,7 @@ function SearchContents({
 
   return (
     <div className={cx('container')} onKeyDown={handleKeyboard}>
-      <h1 className={cx('title')}>Title</h1>
+      <h1 className={cx('title')}>검색 자동완성 기능 구현 과제</h1>
       <ClickAwayListener onClickAway={onClickAway}>
         <div className={cx('contents')}>
           <input
