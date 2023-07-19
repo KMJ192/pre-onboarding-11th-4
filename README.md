@@ -1,5 +1,31 @@
 # 원티드 프리온보딩 인턴십 4주차 과제
 
+### 프로젝트 실행
+
+- client
+
+```
+git clone https://github.com/KMJ192/pre-onboarding-11th-4
+npm install
+npm run start
+```
+
+- server
+
+```
+git clone https://github.com/walking-sunset/assignment-api.git
+npm install
+npm start
+```
+
+### 구현 목표
+
+- 검색 기능
+  - 검색창에 문자열이 입력될때 마다 api 호출하여 필터링 된 문자열을 받아 리스트로 출력
+  - 캐싱 기능을 구현하여 API 호출을 줄임
+- 키보드 이동 기능
+  - 키보드를 이용하여 리스트를 선택할 수 있어야 함
+
 ### 캐싱
 
 ##### 캐싱할 데이터
@@ -29,3 +55,57 @@
 - 인덱싱 된 위치로 스크롤 이동
 - Enter 이벤트가 발생하면 인덱싱 된 요소가 선택되도록 설정
 - 인덱싱이 될 때 마다 스크롤의 위치를 계산하여 스크롤이 이동하도록 설정
+
+### 폴더 구조
+
+```
+root /
+├ public
+|  ├ vite.svg
+├ src
+|  ├ assets
+|  |  ├ react.svg
+|  ├ components
+|  |  ├ ClickAwayListener
+|  |  |  ├ ClickAwayListener.tsx
+|  |  ├ ErrorBoundary
+|  |  |  ├ ErrorBoundary.tsx
+|  ├ network
+|  |  ├ api.ts
+|  ├ pageContents
+|  |  ├ SearchContents
+|  |  |  ├ SearchContents.tsx
+|  |  |  ├ style.module.scss
+|  ├ pages
+|  |  ├ Error
+|  |  |  ├ Error.tsx
+|  |  |  ├ NotFound.tsx
+|  |  |  ├ style.module.scss
+|  |  ├ Index
+|  |  |  ├ Index.tsx
+|  |  ├ Search
+|  |  |  ├ hooks
+|  |  |  |  ├ useGetSearch.ts
+|  |  |  |  ├ useSearchPageState.ts
+|  |  |  ├ Search.tsx
+|  |  |  ├ SearchDataCache.ts
+|  |  ├ index.ts
+|  ├ RootRouter
+|  |  ├ RootRouter.tsx
+|  |  ├ RouterMap.tsx
+|  |  ├ url.ts
+|  ├ App.tsx
+|  ├ index.css
+|  ├ main.tsx
+|  ├ vite-env.d.ts
+├ .eslintrc.json
+├ .gitignore
+├ .prettierrc
+├ index.html
+├ package-lock.json
+├ package.json
+├ README.md
+├ tsconfig.json
+├ tsconfig.node.json
+⎿ vite.config.ts
+```
