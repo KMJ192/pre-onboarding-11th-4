@@ -10,7 +10,6 @@
     "SharedArrayBuffer": "readonly"
   },
   "rules": {
-    //import
     "import/no-relative-packages": 0,
     "import/no-dynamic-require": 0,
     "import/no-unresolved": 0,
@@ -27,19 +26,14 @@
     "import/newline-after-import": 0,
     "import/named": 0,
     "import/extensions": 0,
-
-    // js/ts coding convention
     "linebreak-style": 0,
     "global-require": 0,
-    // "jsx-quotes": ["warning", "prefer-single"],
     "no-use-before-define": 0,
     "no-shadow": 0,
     "no-empty-pattern": 0,
     "prettier/prettier": 0,
     "prefer-const": 1,
     "no-plusplus": 0,
-
-    // react
     "react/jsx-props-no-spreading": 0,
     "react/forbid-prop-types": 0,
     "react/jsx-filename-extension": [
@@ -53,8 +47,6 @@
     "react/destructuring-assignment": 0,
     "react/function-component-definition": 0,
     "react/jsx-no-useless-fragment": 0,
-
-    // jsx
     "jsx-a11y/label-has-associated-control": 0,
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/no-static-element-interactions": 0,
@@ -64,8 +56,6 @@
     "react/react-in-jsx-scope": 0,
     "jsx-a11y/no-autofocus": 0,
     "jsx-a11y/media-has-caption": 0,
-
-    // else
     "no-alert": 1,
     "no-console": 1,
     "no-lonely-if": 0,
@@ -89,7 +79,6 @@
         "plugin:prettier/recommended"
       ],
       "rules": {
-        // typescript
         "@typescript-eslint/no-explicit-any": 0,
         "@typescript-eslint/no-empty-interface": 1,
         "@typescript-eslint/no-var-requires": 1,
